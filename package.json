@@ -12,8 +12,7 @@
     "eslint": "eslint",
     "build": "webpack --progress",
     "watch": "webpack --progress --watch",
-    "serve": "webpack-dev-server --open",
-    "dev": "NODE_ENV=development npm-run-all --parallel watch serve"
+    "dev": "webpack-dev-server --open --watch"
   },
   "author": "mactkg <mactkg@gmail.com> (http://makerbox.net/)",
   "license": "MIT",
