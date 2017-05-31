@@ -1,16 +1,20 @@
 {
-  "name": "webfront",
+  "name": "webfront-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "homepage": "https://github.com/mactkg/webfront-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mactkg/webfront-boilerplate.git"
+  },
   "scripts": {
     "build": "webpack --progress",
     "watch": "webpack --progress --watch",
     "serve": "webpack-dev-server --open",
     "dev": "NODE_ENV=development npm-run-all --parallel watch serve"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "mactkg <mactkg@gmail.com> (http://makerbox.net/)",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
