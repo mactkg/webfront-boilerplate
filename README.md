@@ -1,6 +1,6 @@
 # webfront boilerplate
 - [x] webpack
-- [ ] react
+- [x] react
 - [x] scss
 - [x] babel
   - [x] es2015
