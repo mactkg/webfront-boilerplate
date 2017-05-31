@@ -7,13 +7,17 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:9000',
     'webpack/hot/only-dev-server',
-    './app/js/index'
+    './app/js/index.jsx',
   ],
 
   output: {
     filename: 'bundle.js',
     path: resolve(__dirname, 'dist'),
-    publicPath: '/'
+    publicPath: '/',
+  },
+
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
 
   devtool: 'inline-source-map',
@@ -22,19 +26,19 @@ module.exports = {
     port: 9000,
     hot: true,
     contentBase: resolve(__dirname, 'app'),
-    publicPath: '/'
+    publicPath: '/',
   },
 
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        use: [ 'babel-loader' ],
-        exclude: /node_modules/
+        use: ['babel-loader'],
+        exclude: /node_modules/,
       },
       {
         test: /\.scss$/,
-        use: [ 'style-loader', 'css-loader', 'sass-loader' ],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
@@ -42,8 +46,8 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV)
-      }
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      },
     }),
     // NODE_ENV見えるようにしておく
     new webpack.HotModuleReplacementPlugin(),

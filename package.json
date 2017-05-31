@@ -8,6 +8,8 @@
     "url": "https://github.com/mactkg/webfront-boilerplate.git"
   },
   "scripts": {
+    "flow": "flow",
+    "eslint": "eslint",
     "build": "webpack --progress",
     "watch": "webpack --progress --watch",
     "serve": "webpack-dev-server --open",
@@ -17,12 +19,17 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
     "eslint": "^3.19.0",
-    "eslint-config-eslint": "^4.0.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "locate-path": "^2.0.0",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.0.2",
     "sass-loader": "^6.0.5",

@@ -1,5 +1,7 @@
 {
-    "extends": ["eslint"],
-    "rules": {
-    }
+	"extends": ["airbnb"],
+	"rules": {},
+	"env": {
+		"browser": true
+	}
 }
